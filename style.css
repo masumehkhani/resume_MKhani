@@ -1,0 +1,274 @@
+@font-face {
+    font-family: 'vazirmatn';
+    src: url('./fonts/fonts-vazirmatn/Vazirmatn-Regular.woff2');
+ }
+ @font-face {
+    font-family: 'vazirmatn-bold';
+    src: url('./fonts/fonts-vazirmatn/Vazirmatn-Bold.woff2');
+ }
+ @font-face {
+    font-family: 'Vazirmatn-SemiBold';
+    src: url('./fonts/fonts-vazirmatn/Vazirmatn-SemiBold.woff2');
+ }
+ @font-face {
+    font-family: 'shabnam';
+    src: url('./fonts/fonts-shabnam/Shabnam.woff2');
+ }
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: 0;
+     font-family: 'vazirmatn';
+ }
+
+
+ body {
+     background-color: lightblue;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+ }
+
+ .container {
+     /* position: relative; */
+     width: 100%;
+     max-width: 1000px;
+     min-height: 1000px;
+     background-color: #fff;
+     margin: 50px;
+     display: grid;
+     grid-template-columns: 1.1fr 2fr;
+     box-shadow: 0cqh 10px 15px rgba(0, 0, 0, 0.1);
+ }
+
+ .left-side {
+     /* // position: relative; */
+     background: #003147;
+     padding: 40px;
+ }
+
+ .profileText {
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding-bottom: 20px;
+     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+ }
+
+ .profileText .image {
+     position: relative;
+     width: 200px;
+     height: 200px;
+     border-radius: 50%;
+     overflow: hidden;
+
+ }
+
+ .profileText .image img {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+ }
+
+ .profileText h2 {
+     color: #fff;
+     font-size: 1.5rem;
+     margin-top: 20px;
+     text-transform: uppercase;
+     text-align: center;
+     font-weight: 600;
+     line-height: 1.4rem;
+     font-family: 'Vazirmatn-SemiBold';
+
+ }
+
+ .profileText h2 span {
+    display: block;
+     font-size: 0.8rem;
+     margin-top: 1rem;
+ }
+
+ .contactInfo {
+     padding-top: 60px;
+ }
+
+ .title {
+     color: #fff;
+     text-transform: uppercase;
+     font-weight: 600;
+     letter-spacing: 1px;
+     margin-bottom: 20px;
+     font-family: 'Vazirmatn-SemiBold';
+ }
+
+ .contactInfo ul {
+     position: relative;
+ }
+
+ .contactInfo ul li {
+     position: relative;
+     list-style: none;
+     margin: 10px 0;
+ }
+ .contactInfo ul li a{
+    text-decoration: none;
+ }
+
+ .contactInfo ul li .icon {
+     display: inline-block;
+     width: 30px;
+     font-size: 18px;
+     color: #03a9f4;
+ }
+ .contactInfo ul li .text:nth-child(1)  {
+    font-family: 'shabnam';
+    direction: rtl;
+ }
+
+ .contactInfo ul li span {
+     color: #fff;
+ }
+
+ .contactInfo.education li {
+     margin-bottom: 15px;
+ }
+
+ .contactInfo.education h5 {
+     color: #03a9f4;
+     font-weight: 500;
+ }
+
+ .contactInfo.education h4:nth-child(2) {
+     color: #fff;
+     font-weight: 500;
+     margin: 0.5rem 0;
+ }
+
+ .contactInfo.education h4 {
+     color: #fff;
+     font-weight: 200;
+     font-family: 'vazirmatn';
+     font-size: 0.8rem;
+ }
+ .contactInfo.education h5 {
+    font-family: 'shabnam';
+ }
+
+ .contactInfo.language .percent {
+     position: relative;
+     width: 100%;
+     height: 6px;
+     background-color: #081921;
+     display: block;
+     margin-top: 5px;
+ }
+
+ .contactInfo.language .percent div {
+     position: absolute;
+     top: 0;
+     left: 0;
+     /* width: 80%; */
+     height: 100%;
+     background-color: #03a9f4;
+ }
+
+ .right-side {
+     position: relative;
+     background: #fff;
+     padding: 40px;
+ }
+
+ .about {
+     margin-bottom: 50px;
+ }
+
+ .about:last-child {
+     margin-bottom: 0;
+ }
+
+ .title2 {
+     color: #003147;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+     margin-bottom: 10px;
+     font-family: 'vazirmatn';
+ }
+
+ p {
+     color: #333;
+     font-family: 'vazirmatn';
+ }
+
+ .about .box {
+     display: flex;
+     flex-direction: row;
+     margin: 20px 0;
+ }
+
+ .about .box .year_compoany {
+     min-width: 150px;
+ }
+
+ .about .box .year_compoany h5 {
+     color: #848c90;
+     font-weight: 600;
+ }
+
+ .about .box .text h4 {
+     text-transform: uppercase;
+     color: #2a7da2;
+     
+     font-weight: 600;
+     font-size: 16px;
+ }
+
+ .skills .box h4 {
+     /* text-transform: uppercase; */
+     color: #515357;
+     font-weight: 500;
+     font-family: 'Vazirmatn-SemiBold';
+ }
+
+ .skills .box li {
+     list-style: none;
+ }
+
+ .projects .box {
+     position: relative;
+     display: grid;
+     width: 100%;
+     grid-template-columns: 150px 1fr;
+     justify-content: center;
+    align-items: center;
+ }
+
+ .project_title a {
+     text-decoration: none;
+     color: #848c99;
+ }
+
+ .projects .text p {
+     color: #003147;
+ }
+
+ @media screen and (max-width:600px) {
+     .container {
+         grid-template-columns: repeat(1, 1fr);
+     }
+           .about .box {
+               display: flex;
+               flex-direction: column;
+               margin: 30px 0;
+           }
+    
+           .about .box h5 {
+               margin: 20px 0;
+           }
+ }
